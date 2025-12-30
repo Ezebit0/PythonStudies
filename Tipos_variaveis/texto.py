@@ -62,3 +62,9 @@ print("Nome completo (10a forma): {} {}".format(nome, sobrenome))
 nome.upper()
 # Retorna a string em letra minuscula
 nome.lower()
+
+nome.encode()
+nome.encode().decode 
+
+# Substitui letra
+nome_completo.replace("E", "A")

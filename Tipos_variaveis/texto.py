@@ -57,14 +57,3 @@ print(f"Nome completo (9a forma): {nome} {sobrenome}")
 # 10) Usando .format()
 # Os {} são preenchidos pelos valores passados no format()
 print("Nome completo (10a forma): {} {}".format(nome, sobrenome))
-
-# Retorna a string em letra maiuscula
-nome.upper()
-# Retorna a string em letra minuscula
-nome.lower()
-
-nome.encode()
-nome.encode().decode 
-
-# Substitui letra
-nome_completo.replace("E", "A")

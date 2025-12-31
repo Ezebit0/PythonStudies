@@ -41,6 +41,3 @@ nome_completo.endswith("es")
 
 # se alvo não existi  na variavel entrega true or false
 "es" not in nome_completo
-
-
-

@@ -1,6 +1,13 @@
 # if, elif, else
 
 # Exemplo de "if"
+'''
+if idade == 19: # Igual á
+    print("Voce tem 19 anos")
+
+if idade != 10: # Diferente
+    print("Voce não tem 10 anos")
+'''
 
 idade = 18
 print("Exemplo de comando if")
@@ -14,11 +21,7 @@ else: # Exemplo de "else"
 # Exemplão
 mensagem = "Pode tirar a CNH" if idade >= 18 else "Voce não pode tirar a CNH"
 
-if idade == 19: # Igual á
-    print("Voce tem 19 anos")
 
-if idade != 10: # Diferente
-    print("Voce não tem 10 anos")
 
 
 

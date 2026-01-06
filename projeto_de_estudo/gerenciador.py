@@ -30,9 +30,14 @@ def completar_tarefa(tarefas, indice_tarefa):
     print(f"Tarefa {indice_tarefa} marcada como completada")
     return
 
+def deletar_tarefas_completadas(tarefas):
+    for tarefa in tarefas:
+        if tarefa["completada"]:
+            tarefas.remove(tarefa)
+    print("Tarefas completadas foram deletadas.")
+    return
+
 tarefas = []
-
-
 while True:
     print("\nMenu do gerenciador de lista de tarefas:")
     print("1. Adicionar tarefa")
@@ -43,7 +48,6 @@ while True:
     print("6. Sair")
 
     escolha = input("Digite a sua escolha: ")
-
 
     if escolha == "1":
         nome_tarefa = input ("Digite o nome da tarefa que deseja adicionar: ")
@@ -62,6 +66,10 @@ while True:
         ver_tarefas(tarefas)
         indice_tarefa = input("Digite o numero da tarefa que deseja completar: ")
         completar_tarefa(tarefas, indice_tarefa)
+
+    elif escolha == "5":
+        deletar_tarefas_completadas(tarefas)
+        ver_tarefas(tarefas)
 
     elif escolha == "6":
         break
